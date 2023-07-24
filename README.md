@@ -78,3 +78,20 @@ def numericSum(string):
     
     return total
 ```
+
+### Exercise two
+
+Here is the second exercise:
+
+> Given a list of a pair of points on a Cartesian plane, write a program that returns true if the points are on a straight line, and false otherwise.
+
+```bash
+    >>> straight([(1,2), (2,3), (3,4), (4,5)])
+    >>> True
+
+    >>> straight([(1,2), (2,3), (3,4), (4,8)])
+    >>> False
+```
+
+### Pseudocode for exercise two
+### Code for exercise two
