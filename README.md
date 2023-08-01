@@ -28,7 +28,7 @@ To run the python code locally in your machine, run each of the following comman
 
 1. Run the Python files
 
-    `python digit-sum.py`
+    `python exercise-1.py`
 
 1. Edit the files to include your own tests, and run them.
 
@@ -113,8 +113,6 @@ What do we know about points on a straight line? When I researched this problem,
   - A line has area equal to zero
 
 Given a triangle formed by points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$, the area of the triangle is given by the formula:
-
-Area = (1/2) |x1(y2 − y3) + x2(y3 − y1) + x3(y1 − y2)|
 
 ```math
 Area = {1 \over 2} \left  [ x_1(y_2 − y_3) + x_2(y_3 − y_1) + x_3(y_1 − y_2) \right ]
