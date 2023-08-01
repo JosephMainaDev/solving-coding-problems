@@ -1,7 +1,6 @@
-# How to Solve Coding Problems
+# How to Tackle Coding Problems Like a Pro
 
-
-This repo has the solutions for two exercises that appear on a blog post I wrote [link to blog post].
+This repo has the solutions for two exercises that appear on a blog post I wrote [on how to solve coding problems](https://josephmaina.hashnode.dev/how-to-tackle-coding-problems-like-a-pro).
 
 In the post, I show you the steps you should follow when attempting to solve coding problems.
 
@@ -12,7 +11,7 @@ The solutions come in two forms:
 
 If you are learning how to code, and how to solve coding problems, please try them out on your own first before looking at my suggested solutions. That way you learn better as opposed to copying a solution.
 
-**Caution**: The solutions suggested in this guide might not be the most optimal. Nor elegant. This guide just gives you a starting point to have a working piece of code. Then figure the rest on your own.
+**Note**: The solutions suggested in this guide might not be the most optimal. Nor elegant. This guide just gives you a starting point to have a working piece of code. Then figure the rest on your own.
 
 ## Running the code
 
@@ -32,7 +31,7 @@ To run the python code locally in your machine, run each of the following comman
 
 1. Edit the files to include your own tests, and run them.
 
-## Solution
+## Solutions
 
 ### Exercise one
 
