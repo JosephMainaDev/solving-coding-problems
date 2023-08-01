@@ -93,10 +93,10 @@ Here is the second exercise:
 > Given a list of a pair of points on a Cartesian plane, write a program that returns true if the points are on a straight line, and false otherwise.
 
 ```bash
-    >>> straight([(1,2), (2,3), (3,4), (4,5)])
+    >>> checkStraightLine([(1,2), (2,3), (3,4), (4,5)])
     >>> True
 
-    >>> straight([(1,2), (2,3), (3,4), (4,8)])
+    >>> checkStraightLine([(1,2), (2,3), (3,4), (4,8)])
     >>> False
 ```
 
@@ -112,7 +112,15 @@ What do we know about points on a straight line? When I researched this problem,
   - A triangle has non-zero area
   - A line has area equal to zero
 
-To compute the area of a triangle on a Cartesian plane, you can use the formula:
+Given a triangle formed by points $(x_1, y_1)$, $(x_2, y_2)$, and $(x_3, y_3)$, the area of the triangle is given by the formula:
+
+Area = (1/2) |x1(y2 − y3) + x2(y3 − y1) + x3(y1 − y2)|
+
+```math
+Area = {1 \over 2} \left  [ x_1(y_2 − y_3) + x_2(y_3 − y_1) + x_3(y_1 − y_2) \right ]
+```
+
+Source: <https://www.cuemath.com/geometry/area-of-triangle-in-coordinate-geometry/>
 
 With that out of the way, my algorithm goes like this:
 
@@ -130,3 +138,20 @@ Compute area using the three points
 
 ### Code for exercise two
 
+```py
+def checkStraightLine(points):
+    # Grab the first 2 points on the line
+    x1, y1 = points[0]
+    x2, y2 = points[1]
+    # And iterate from the 3rd point to the end of the line
+    for (point in points[2:]):
+        # Get a 3rd point
+        x3, y3 = points
+        # Compute the area formed by the three points
+        area = 0.5*(x1*(y2-y3) + x2*(y3-y1) + x3*(y1-y2))
+        # If area is non-zero, the points are not on a straight line
+        if(area != 0) return False
+    
+    # The points are on a straight line
+    return True
+```
